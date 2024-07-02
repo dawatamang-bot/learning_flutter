@@ -134,4 +134,36 @@ void main() {
     }
     print(i);
   }
+  // int error = 10 ~/ 0;
+  // print(error);
+  try {
+    int error = 10 ~/ 0;
+    print(error);
+  } on IntegerDivisionByZeroException {
+    print("Error");
+  }
+  print("Hello mf");
+  void printName(String name) {
+    print("My name is $name");
+  }
+
+  printName("Dawa Tamang");
+  printName("Mahendra Thapa");
+  printName("Xori");
+
+  //function add 2 numbers without parameters
+
+  void add() {
+    int x = 10;
+    int y = 12;
+    print(x + y);
+  }
+
+  print(add);
+//function sub 2 numbers with parameters
+  int sub(int a, int b) {
+    return a - b;
+  }
+
+  print(sub(30, 20));
 }
