@@ -57,4 +57,6 @@ void main() {
   print(c[2]);
   c[0] = "55";
   print(c);
+print(c.reversed);
+print(c.remove"55");
 }
